@@ -6,7 +6,7 @@
 // myFunction();
  
   const myFunction = () => {
-      return ()
+      return 
   }
     console.log(myFunction());
 // let anotherFunction = function (param) {
@@ -17,7 +17,7 @@
   const anotherFunction = (param) => {
       return param;
   }
-  console.log(anotherFunction(param));
+  console.log(anotherFunction());
 
 
 // let add = function (param1, param2) {
