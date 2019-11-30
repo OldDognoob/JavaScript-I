@@ -46,3 +46,6 @@
 //   return num * 3;
 // });
 // console.log(triple);
+
+const triple = (arr) => arr.map(function(num) {return num * 3});
+console.log(triple([1,2,3,4]));
