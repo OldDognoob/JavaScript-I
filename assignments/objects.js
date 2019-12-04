@@ -25,12 +25,14 @@ const Mitzi ={
   gender: "F",
 }
 
-const Kennan ={
+const intern2 = {
   id: 2,
   name: "Kennan",
   email: "kdiben1@tinypic.com",
-  gender:"M"
+  gender: "M",
+  // speaks: "Hello,my name is Kennan!"
 }
+
 
 const Keven ={
   id: 3,
@@ -59,33 +61,38 @@ const Antonietta ={
 // Mitzi's name
    console.log(Mitzi.name);
 // Kennan's ID
-   console.log(Kennan.id);
+   console.log(intern2.id);
 // Keven's email
    console.log(Keven.email);
 // Gannie's name
    console.log(Gannie.name);
 // Antonietta's Gender
    console.log(Antonietta.gender);
+
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-  //  console.log(kennan.speak());
+    // console.log(kennan.speak);
+  
 
-  // const letSpeak = function() {
-  //   return `Hello, my name is ${this.name}!`;}
-  //   Kennan.speak=letSpeak;
+  // const kennanspeak = function () { return("Hello, my name is Kennan!"); } 
+  // console.log(kennan.speak());
 
-  //   console.log(kennan.speak());
-
-  const kennanspeak = function () { return("Hello, my name is Kennan!"); } 
-  console.log(Kennan.speak);
-   
-
+  // const intern2Speak=function () {return("Hello, my name is kennan!");}
+  // console.log(intern2.speak);
+  // Kennan.speak = () => "Hello, my name is kennan";
+  // console.log(kennan.speak());
+  intern2.speak = function () {
+    console.log("Hello, my name is Kennan!");
+  }
+  console.log(intern2.speak());
+    
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
-const AntoniettamultiplyNums = function () {return(num1*num2);}
-console.log(Antonietta.multiplyNums);
+Antonietta.multiplyNums =  (num1,num2) =>{return num1*num2};
+console.log(Antonietta.multiplyNums(4,6));
+
 
 
 
