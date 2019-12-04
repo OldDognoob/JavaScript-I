@@ -84,7 +84,7 @@ const Antonietta ={
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 
-const antoniettamultiplyNums = function () {return(num1*num2);}
+const AntoniettamultiplyNums = function () {return(num1*num2);}
 console.log(Antonietta.multiplyNums);
 
 
