@@ -79,18 +79,18 @@ console.log(`Car 33 is a *car year goes here* *car make goes here* *car model go
 
 function inventoryrecall(obj, id) {
   let foundcar = '';
-  let inentoryitem = '';
+  let inventoryitem = '';
 
   for (let i = 0; i<obj.length; i++) {
-    inentoryitem = inventory[i].id
-    if(inentoryitem === id){
+    inventoryitem = inventory[i].id
+    if(inventoryitem === id){
       foundcar = inventory[i];
       return "Car" +foundcar.id+ "is a" +foundcar.car_year+''+foundcar.car_make+''+foundcar.car_model+"";
     }
   }
 
 }
-console.log(inventoryrecall(inentory, 33));
+console.log(inventoryrecall(inventory, 33));
  
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
