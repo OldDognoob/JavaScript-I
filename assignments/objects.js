@@ -25,13 +25,16 @@ const Mitzi ={
   gender: "F",
 }
 
-const intern2 = {
+const Kennan = {
   id: 2,
   name: "Kennan",
   email: "kdiben1@tinypic.com",
   gender: "M",
-  // speaks: "Hello,my name is Kennan!"
+  speak: function() {
+    return `Hello my name is ${this.name}`;
+  }
 }
+console.log(Kennan.speak());
 
 
 const Keven ={
@@ -48,12 +51,16 @@ const Gannie ={
   gender: "M"
 }
 
-const Antonietta ={
+const Antonietta = {
   id: 5,
   name: "Antonietta",
   email: "adaine5@samsung.com",
-  gender: "F"
+  gender: "F",
+  multiplyNums: function(num1,num2){
+    return (num1 * num2);
+  }
 }
+console.log(Antonietta.multiplyNums(3,4));
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
@@ -61,7 +68,7 @@ const Antonietta ={
 // Mitzi's name
    console.log(Mitzi.name);
 // Kennan's ID
-   console.log(intern2.id);
+   console.log(Kennan.id);
 // Keven's email
    console.log(Keven.email);
 // Gannie's name
@@ -72,29 +79,16 @@ const Antonietta ={
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
     // console.log(kennan.speak);
-  
-
-  // const kennanspeak = function () { return("Hello, my name is Kennan!"); } 
-  // console.log(kennan.speak());
-
-  // const intern2Speak=function () {return("Hello, my name is kennan!");}
-  // console.log(intern2.speak);
-  // Kennan.speak = () => "Hello, my name is kennan";
-  // console.log(kennan.speak());
-  intern2.speak = function () {
-    console.log("Hello, my name is Kennan!");
-  }
-  console.log(intern2.speak());
+       console.log(Kennan.speak());
+  // intern2.speak = function () {
+  //   console.log("Hello, my name is Kennan!");
+  // }
+  // console.log(intern2.speak());
     
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-//console.log(antonietta.multiplyNums(3,4));
 
-Antonietta.multiplyNums =  (num1,num2) =>{return num1*num2};
-console.log(Antonietta.multiplyNums(4,6));
-
-
-
+console.log(Antonietta.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
